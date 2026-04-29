@@ -1,0 +1,9 @@
+pandoc: 3.1.11
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles:
+  vitopack: vitopack.html
+last_built: 2026-04-29T15:11Z
+urls:
+  reference: https://donvito.github.io/vitopack/reference
+  article: https://donvito.github.io/vitopack/articles
