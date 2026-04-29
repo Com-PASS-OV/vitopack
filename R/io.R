@@ -8,7 +8,7 @@
 #' @param range Optional cell range passed to [readxl::read_xlsx()] (e.g.
 #'   `"A1:D20"`).
 #'
-#' @return A named list of data frames — one entry per sheet.
+#' @return A named list of data frames -- one entry per sheet.
 #' @export
 #'
 #' @examples
@@ -40,21 +40,30 @@ load_excel_sheets <- function(path, range = NULL) {
 #' Wrapper around the `readxlsb` package. Returns a list whose names are the
 #' sheet names and whose elements are the parsed data frames.
 #'
+#' @note `readxlsb` was archived from CRAN in 2024-09-25. To use this
+#'   function you have to install it from GitHub manually:
+#'   `remotes::install_github("velofrog/readxlsb")`.
+#'
 #' @param path Path to the workbook.
 #' @param range Optional cell range passed to `readxlsb::read_xlsb()`.
 #'
-#' @return A named list of data frames — one entry per sheet.
+#' @return A named list of data frames -- one entry per sheet.
 #' @export
 #'
 #' @examples
 #' \dontrun{
+#'   # Requires: remotes::install_github("velofrog/readxlsb")
 #'   sheets <- load_xlsb_sheets("path/to/file.xlsb")
 #' }
 load_xlsb_sheets <- function(path, range = NULL) {
   if (!requireNamespace("readxlsb", quietly = TRUE)) {
-    stop("Package 'readxlsb' is required for load_xlsb_sheets(). ",
-         "Install it with install.packages(\"readxlsb\").",
-         call. = FALSE)
+    stop(
+      "Package 'readxlsb' is required for load_xlsb_sheets() but was ",
+      "archived from CRAN in 2024. Install it from the original source:\n",
+      "  install.packages(\"remotes\")\n",
+      "  remotes::install_github(\"velofrog/readxlsb\")",
+      call. = FALSE
+    )
   }
   # readxlsb does not export a sheet-listing helper, so we parse sheet
   # names ourselves from xl/workbook.xml (.xlsb is a ZIP container).

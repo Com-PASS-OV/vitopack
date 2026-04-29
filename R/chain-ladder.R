@@ -33,7 +33,7 @@ create_chl_coef_triangle <- function(cum_trg) {
 #' `sum(cum[, j]) / sum(cum[, j - 1])`.
 #'
 #' @param cum_trg A cumulative numeric triangle.
-#' @param chl_length A vector — each element is either the literal `"full"`
+#' @param chl_length A vector -- each element is either the literal `"full"`
 #'   (use all rows) or a numeric/integer giving the window length. Default
 #'   `"full"`.
 #'
@@ -80,7 +80,7 @@ create_chl_coefs <- function(cum_trg, chl_length = "full") {
 #' @param chl_coefs A one-row data frame whose first column is a label and
 #'   whose other columns hold development factors. (As returned by
 #'   [create_chl_coefs()].)
-#' @param name Character — label for the resulting row.
+#' @param name Character -- label for the resulting row.
 #'
 #' @return A character vector of cumulative-product factors with `name` as
 #'   the first element.
@@ -115,7 +115,7 @@ create_product_coefs <- function(chl_coefs, name = "Product") {
 #'
 #' @param chl_trg A development-factor triangle (e.g. the output of
 #'   [create_chl_coef_triangle()]).
-#' @param avg_length Vector — each element either `"full"` (use the full
+#' @param avg_length Vector -- each element either `"full"` (use the full
 #'   diagonal) or an integer giving the window length.
 #'
 #' @return A `data.frame` with one row per `avg_length` element.
@@ -236,7 +236,7 @@ create_chl_coefs_weighted_future <- function(cum_trg, trg_weight,
 #' of `data_matrix`, with the row names used as the time axis.
 #'
 #' @param data_matrix A named matrix where row names act as the x-axis.
-#' @param columns Character or numeric vector — which columns to plot.
+#' @param columns Character or numeric vector -- which columns to plot.
 #'
 #' @return A `plotly` htmlwidget.
 #' @export

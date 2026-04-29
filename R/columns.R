@@ -3,7 +3,7 @@
 #' For each pair `(condition_names[i], new_cols_names[i])` the function adds a
 #' new column to `data` initialised to `0`. Where the row matches
 #' `data[[condition_var]] == condition_names[i]`, the new column is set to the
-#' value of `data[[values_var]]` (evaluated as an expression — see Details).
+#' value of `data[[values_var]]` (evaluated as an expression - see Details).
 #'
 #' @details
 #' The `values_var` argument is parsed and evaluated inside `data[, ...]`,
@@ -16,8 +16,8 @@
 #'   `condition_var`.
 #' @param new_cols_names Character vector with the names of the new columns to
 #'   create. Same length as `condition_names`.
-#' @param condition_var Character scalar — name of the column to test.
-#' @param values_var Character scalar — expression that yields the value to
+#' @param condition_var Character scalar - name of the column to test.
+#' @param values_var Character scalar - expression that yields the value to
 #'   assign where the condition matches.
 #'
 #' @return The updated data.table (modified in place).
@@ -102,7 +102,7 @@ create_policy_exposure_columns_m <- function(data, exp_names, start_months,
 
 #' Build per-period exposure columns (in days)
 #'
-#' Sister of [create_policy_exposure_columns_m()] — same logic, but the
+#' Sister of [create_policy_exposure_columns_m()] - same logic, but the
 #' exposure is expressed in **days** (rounded) instead of years.
 #'
 #' @inheritParams create_policy_exposure_columns_m
@@ -153,11 +153,11 @@ create_policy_exposure_days_columns <- function(data, exp_names, start_months,
 #' `new_variable_names[i]` equal to `multiple_exp_names[i] * multiply_var`.
 #'
 #' @param data A data frame.
-#' @param new_variable_names Character vector — names of the resulting
+#' @param new_variable_names Character vector - names of the resulting
 #'   columns.
-#' @param multiple_exp_names Character vector — names of the columns to
+#' @param multiple_exp_names Character vector - names of the columns to
 #'   multiply.
-#' @param multiply_var Character scalar — name of the multiplier column.
+#' @param multiply_var Character scalar - name of the multiplier column.
 #'
 #' @return A data frame with the new multiplied columns added.
 #' @export

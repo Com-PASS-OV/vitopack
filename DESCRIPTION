@@ -36,7 +36,6 @@ Imports:
     utils
 Suggests:
     readxl,
-    readxlsb,
     plotly,
     testthat (>= 3.0.0),
     knitr,

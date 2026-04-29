@@ -7,16 +7,16 @@
 #'
 #' @param data A data frame (or tibble) with at least the columns named by
 #'   `row_num`, `col_num` and `value`.
-#' @param row_num Character — name of the column with row indices (origin
+#' @param row_num Character - name of the column with row indices (origin
 #'   periods, 1-based).
-#' @param col_num Character — name of the column with column indices
+#' @param col_num Character - name of the column with column indices
 #'   (development periods, 0-based).
-#' @param value Character — name of the numeric column to be summed.
-#' @param cond_variable Optional character vector — names of columns to
+#' @param value Character - name of the numeric column to be summed.
+#' @param cond_variable Optional character vector - names of columns to
 #'   filter on.
 #' @param cond_value Optional vector of values, same length as
-#'   `cond_variable` — equality filter applied pairwise.
-#' @param rows Optional integer — size of the output triangle. Defaults to
+#'   `cond_variable` - equality filter applied pairwise.
+#' @param rows Optional integer - size of the output triangle. Defaults to
 #'   the maximum value of `data[[row_num]]`.
 #'
 #' @return A numeric `rows x rows` matrix.
@@ -118,7 +118,7 @@ create_decumulative_triangle <- function(trg) {
 #' starting from the bottom-left.
 #'
 #' @param trg A square numeric matrix (a triangle).
-#' @param diag_num Integer — which anti-diagonal to read. Defaults to the
+#' @param diag_num Integer - which anti-diagonal to read. Defaults to the
 #'   main (last) one.
 #'
 #' @return A numeric vector with the values on that diagonal.
@@ -167,8 +167,8 @@ diag_sums <- function(trg) {
 #' `NA`, then fills in the gaps from `new_trg` (which already contains the
 #' newly observed diagonal).
 #'
-#' @param old_trg A `(n) x (n)` matrix — the old triangle.
-#' @param new_trg A `(n+1) x (n+1)` matrix — the new triangle including the
+#' @param old_trg A `(n) x (n)` matrix - the old triangle.
+#' @param new_trg A `(n+1) x (n+1)` matrix - the new triangle including the
 #'   freshly observed diagonal.
 #'
 #' @return The merged `(n+1) x (n+1)` matrix.
@@ -196,7 +196,7 @@ diag_writer <- function(old_trg, new_trg) {
 #' source data is monthly or quarterly and the report wants annual figures.
 #'
 #' @param cum_trg A cumulative numeric triangle.
-#' @param period Integer — number of sub-periods that make up one year
+#' @param period Integer - number of sub-periods that make up one year
 #'   (default `4` for quarters).
 #'
 #' @return A cumulative annual triangle (numeric matrix).
