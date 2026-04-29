@@ -10,3 +10,6 @@ inst/doc/
 /Meta/
 revdep/
 .vscode/
+.Rd2pdf*/
+*.tar.gz
+*.pdf

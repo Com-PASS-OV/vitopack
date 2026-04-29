@@ -15,3 +15,6 @@
 ^codecov\.yml$
 ^revdep$
 ^SETUP\.md$
+^\.Rd2pdf.*$
+^.*\.tar\.gz$
+^vitopack_.*\.pdf$
