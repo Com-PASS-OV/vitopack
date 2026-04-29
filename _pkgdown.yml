@@ -1,0 +1,66 @@
+url: https://donvito.github.io/vitopack/
+
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#1f4e79"
+    base_font: {google: "Inter"}
+    heading_font: {google: "Inter"}
+    code_font: {google: "JetBrains Mono"}
+
+home:
+  title: vitopack — actuarial helpers in R
+  description: >
+    Triangles, chain-ladder factors, exposure columns, Czech birth-number
+    parsing and color palettes.
+
+navbar:
+  structure:
+    left:  [intro, reference, articles, news]
+    right: [search, github]
+
+reference:
+  - title: "Triangles"
+    desc: "Build, cumulate, and visualise development triangles."
+    contents:
+      - create_triangle
+      - create_cumulative_triangle
+      - create_decumulative_triangle
+      - create_annual_triangle
+      - create_run_off_check
+      - diag_reader
+      - diag_sums
+      - diag_writer
+      - triangle_namer
+  - title: "Chain-ladder"
+    desc: "Development factors and ultimate projections."
+    contents:
+      - create_chl_coef_triangle
+      - create_chl_coefs
+      - create_chl_coefs_weighted
+      - create_chl_coefs_weighted_future
+      - create_avg_coefs
+      - create_product_coefs
+      - create_chl_trg_visualization
+      - create_chl_trg_visualization_pvzp
+  - title: "Policy columns & exposures"
+    contents:
+      - create_find_columns
+      - create_policy_exposure_columns_m
+      - create_policy_exposure_days_columns
+      - create_multiple_columns_m
+      - bind_with_source
+  - title: "Czech birth numbers"
+    contents:
+      - rc_to_birth_day
+  - title: "Color palettes"
+    contents:
+      - rgb_colors_for_plot
+      - get_colors
+      - plot_color_bars
+      - rainbow_cat
+  - title: "Misc"
+    contents:
+      - load_excel_sheets
+      - load_xlsb_sheets
+      - numeric_format

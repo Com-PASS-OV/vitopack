@@ -1,0 +1,17 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^LICENSE\.md$
+^README\.Rmd$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
+^cran-comments\.md$
+^CRAN-SUBMISSION$
+^\.Rhistory$
+^\.RData$
+^\.Ruserdata$
+^\.DS_Store$
+^codecov\.yml$
+^revdep$
+^SETUP\.md$
