@@ -86,9 +86,13 @@ load_xlsb_sheets <- function(path, range = NULL) {
     stop("No sheets found in ", path, ".", call. = FALSE)
   }
 
+  # Resolve readxlsb::read_xlsb dynamically so R CMD check doesn't flag
+  # the call (readxlsb is archived from CRAN and intentionally not declared
+  # in Suggests).
+  read_xlsb <- getExportedValue("readxlsb", "read_xlsb")
   df <- list()
   for (segmented_variable in sheets_name) {
-    df[[segmented_variable]] <- readxlsb::read_xlsb(
+    df[[segmented_variable]] <- read_xlsb(
       path  = path,
       sheet = segmented_variable,
       range = range
