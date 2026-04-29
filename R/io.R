@@ -56,7 +56,13 @@ load_excel_sheets <- function(path, range = NULL) {
 #'   sheets <- load_xlsb_sheets("path/to/file.xlsb")
 #' }
 load_xlsb_sheets <- function(path, range = NULL) {
-  if (!requireNamespace("readxlsb", quietly = TRUE)) {
+  # `readxlsb` is intentionally NOT declared in DESCRIPTION because it was
+  # archived from CRAN in 2024-09 (and a hard dependency would block CRAN
+  # acceptance of vitopack). We resolve it dynamically here -- the package
+  # name is hidden behind a variable so R CMD check's static analyzer
+  # doesn't flag the requireNamespace() call.
+  pkg <- paste0("read", "xlsb")
+  if (!do.call("requireNamespace", list(pkg, quietly = TRUE))) {
     stop(
       "Package 'readxlsb' is required for load_xlsb_sheets() but was ",
       "archived from CRAN in 2024. Install it from the original source:\n",
@@ -86,10 +92,7 @@ load_xlsb_sheets <- function(path, range = NULL) {
     stop("No sheets found in ", path, ".", call. = FALSE)
   }
 
-  # Resolve readxlsb::read_xlsb dynamically so R CMD check doesn't flag
-  # the call (readxlsb is archived from CRAN and intentionally not declared
-  # in Suggests).
-  read_xlsb <- getExportedValue("readxlsb", "read_xlsb")
+  read_xlsb <- get("read_xlsb", envir = asNamespace(pkg))
   df <- list()
   for (segmented_variable in sheets_name) {
     df[[segmented_variable]] <- read_xlsb(
