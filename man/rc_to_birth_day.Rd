@@ -22,26 +22,26 @@ A \code{Date} vector of the same length as \code{rc_s_lomitkem}.
 }
 \description{
 These three variants implement slightly different rules for resolving the
-century (the two-digit year stored in a Czech \emph{rodné číslo}). They are
+century (the two-digit year stored in a Czech \emph{rodne cislo}). They are
 kept as separate functions so existing code that depends on a particular
 rule keeps working.
 }
 \details{
 \itemize{
-\item \code{rc_to_birth_day()} — assumes the input has the trailing 4-digit suffix
+\item \code{rc_to_birth_day()} - assumes the input has the trailing 4-digit suffix
 separated by a slash (\code{"YYMMDD/XXXX"}, total length 11). Years \verb{< 54} go
 into the 21st century, otherwise the 20th.
-\item \code{rc_to_birth_day_2()} — does not check length and uses cut-off \code{25} —
+\item \code{rc_to_birth_day_2()} - does not check length and uses cut-off \code{25} -
 anything \verb{< 25} is 21st century, otherwise 20th.
-\item \code{rc_to_birth_day_3()} — like \code{rc_to_birth_day()} but with cut-off \code{25}.
+\item \code{rc_to_birth_day_3()} - like \code{rc_to_birth_day()} but with cut-off \code{25}.
 }
 
 All three apply the women-offset (+50 added to the month for women, so
-months 51–62 → 01–12).
+months 51-62 -> 01-12).
 }
 \examples{
 rc_to_birth_day("905615/1234")     # man, 1990-06-15
 rc_to_birth_day("9056151234")      # man, 1990-06-15  (no slash, length 10)
-rc_to_birth_day_2("055615/1234")   # cut-off 25 → 2005-06-15
-rc_to_birth_day_3("055615/1234")   # 11 chars + cut-off 25 → 2005-06-15
+rc_to_birth_day_2("055615/1234")   # cut-off 25 -> 2005-06-15
+rc_to_birth_day_3("055615/1234")   # 11 chars + cut-off 25 -> 2005-06-15
 }

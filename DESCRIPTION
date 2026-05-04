@@ -18,6 +18,7 @@ License: MIT + file LICENSE
 URL: https://github.com/Com-PASS-OV/vitopack, https://Com-PASS-OV.github.io/vitopack/
 BugReports: https://github.com/Com-PASS-OV/vitopack/issues
 Encoding: UTF-8
+Language: en-US
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3

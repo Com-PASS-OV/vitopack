@@ -12,18 +12,18 @@ families:
 }
 \details{
 \itemize{
-\item \strong{Triangles & chain-ladder} — \code{\link[=create_triangle]{create_triangle()}},
+\item \strong{Triangles & chain-ladder} - \code{\link[=create_triangle]{create_triangle()}},
 \code{\link[=create_cumulative_triangle]{create_cumulative_triangle()}}, \code{\link[=create_chl_coefs]{create_chl_coefs()}},
 \code{\link[=create_chl_coefs_weighted]{create_chl_coefs_weighted()}}, \code{\link[=create_run_off_check]{create_run_off_check()}} and friends.
-\item \strong{Policy columns & exposures} — \code{\link[=create_find_columns]{create_find_columns()}},
+\item \strong{Policy columns & exposures} - \code{\link[=create_find_columns]{create_find_columns()}},
 \code{\link[=create_policy_exposure_columns_m]{create_policy_exposure_columns_m()}},
 \code{\link[=create_policy_exposure_days_columns]{create_policy_exposure_days_columns()}}, \code{\link[=create_multiple_columns_m]{create_multiple_columns_m()}}.
-\item \strong{Czech birth numbers} — \code{\link[=rc_to_birth_day]{rc_to_birth_day()}}, \code{\link[=rc_to_birth_day_2]{rc_to_birth_day_2()}},
+\item \strong{Czech birth numbers} - \code{\link[=rc_to_birth_day]{rc_to_birth_day()}}, \code{\link[=rc_to_birth_day_2]{rc_to_birth_day_2()}},
 \code{\link[=rc_to_birth_day_3]{rc_to_birth_day_3()}}.
-\item \strong{Color palettes} — \code{\link[=rgb_colors_for_plot]{rgb_colors_for_plot()}}, \code{\link[=get_colors]{get_colors()}},
+\item \strong{Color palettes} - \code{\link[=rgb_colors_for_plot]{rgb_colors_for_plot()}}, \code{\link[=get_colors]{get_colors()}},
 \code{\link[=get_colors_plus]{get_colors_plus()}}, \code{\link[=get_colors_duo]{get_colors_duo()}}, \code{\link[=plot_color_bars]{plot_color_bars()}},
 \code{\link[=rainbow_cat]{rainbow_cat()}}.
-\item \strong{I/O & misc} — \code{\link[=load_excel_sheets]{load_excel_sheets()}}, \code{\link[=load_xlsb_sheets]{load_xlsb_sheets()}},
+\item \strong{I/O & misc} - \code{\link[=load_excel_sheets]{load_excel_sheets()}}, \code{\link[=load_xlsb_sheets]{load_xlsb_sheets()}},
 \code{\link[=numeric_format]{numeric_format()}}, \code{\link[=bind_with_source]{bind_with_source()}}.
 }
 }

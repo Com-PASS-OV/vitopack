@@ -21,9 +21,9 @@ create_find_columns(
 \item{new_cols_names}{Character vector with the names of the new columns to
 create. Same length as \code{condition_names}.}
 
-\item{condition_var}{Character scalar — name of the column to test.}
+\item{condition_var}{Character scalar - name of the column to test.}
 
-\item{values_var}{Character scalar — expression that yields the value to
+\item{values_var}{Character scalar - expression that yields the value to
 assign where the condition matches.}
 }
 \value{
@@ -33,7 +33,7 @@ The updated data.table (modified in place).
 For each pair \verb{(condition_names[i], new_cols_names[i])} the function adds a
 new column to \code{data} initialised to \code{0}. Where the row matches
 \code{data[[condition_var]] == condition_names[i]}, the new column is set to the
-value of \code{data[[values_var]]} (evaluated as an expression — see Details).
+value of \code{data[[values_var]]} (evaluated as an expression - see Details).
 }
 \details{
 The \code{values_var} argument is parsed and evaluated inside \code{data[, ...]},

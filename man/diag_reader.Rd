@@ -9,7 +9,7 @@ diag_reader(trg, diag_num = nrow(trg))
 \arguments{
 \item{trg}{A square numeric matrix (a triangle).}
 
-\item{diag_num}{Integer — which anti-diagonal to read. Defaults to the
+\item{diag_num}{Integer - which anti-diagonal to read. Defaults to the
 main (last) one.}
 }
 \value{

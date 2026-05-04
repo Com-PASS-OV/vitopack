@@ -13,7 +13,7 @@ load_excel_sheets(path, range = NULL)
 \code{"A1:D20"}).}
 }
 \value{
-A named list of data frames — one entry per sheet.
+A named list of data frames -- one entry per sheet.
 }
 \description{
 Wrapper around \code{\link[readxl:excel_sheets]{readxl::excel_sheets()}} and \code{\link[readxl:read_excel]{readxl::read_xlsx()}}. Returns

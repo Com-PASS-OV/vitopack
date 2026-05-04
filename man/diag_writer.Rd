@@ -7,9 +7,9 @@
 diag_writer(old_trg, new_trg)
 }
 \arguments{
-\item{old_trg}{A \verb{(n) x (n)} matrix — the old triangle.}
+\item{old_trg}{A \verb{(n) x (n)} matrix - the old triangle.}
 
-\item{new_trg}{A \verb{(n+1) x (n+1)} matrix — the new triangle including the
+\item{new_trg}{A \verb{(n+1) x (n+1)} matrix - the new triangle including the
 freshly observed diagonal.}
 }
 \value{

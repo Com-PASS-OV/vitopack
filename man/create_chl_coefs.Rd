@@ -9,7 +9,7 @@ create_chl_coefs(cum_trg, chl_length = "full")
 \arguments{
 \item{cum_trg}{A cumulative numeric triangle.}
 
-\item{chl_length}{A vector — each element is either the literal \code{"full"}
+\item{chl_length}{A vector -- each element is either the literal \code{"full"}
 (use all rows) or a numeric/integer giving the window length. Default
 \code{"full"}.}
 }

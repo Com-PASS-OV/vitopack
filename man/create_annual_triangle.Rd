@@ -9,7 +9,7 @@ create_annual_triangle(cum_trg, period = 4)
 \arguments{
 \item{cum_trg}{A cumulative numeric triangle.}
 
-\item{period}{Integer — number of sub-periods that make up one year
+\item{period}{Integer - number of sub-periods that make up one year
 (default \code{4} for quarters).}
 }
 \value{

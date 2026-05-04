@@ -1,8 +1,8 @@
 # vitopack
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/donvito/vitopack/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/donvito/vitopack/actions/workflows/R-CMD-check.yaml)
-[![Codecov test coverage](https://codecov.io/gh/donvito/vitopack/branch/main/graph/badge.svg)](https://app.codecov.io/gh/donvito/vitopack?branch=main)
+[![R-CMD-check](https://github.com/Com-PASS-OV/vitopack/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Com-PASS-OV/vitopack/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/Com-PASS-OV/vitopack/branch/main/graph/badge.svg)](https://app.codecov.io/gh/Com-PASS-OV/vitopack?branch=main)
 [![CRAN status](https://www.r-pkg.org/badges/version/vitopack)](https://CRAN.R-project.org/package=vitopack)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
@@ -25,7 +25,7 @@ The development version from GitHub:
 
 ```r
 # install.packages("pak")
-pak::pak("donvito/vitopack")
+pak::pak("Com-PASS-OV/vitopack")
 ```
 
 Once on CRAN:

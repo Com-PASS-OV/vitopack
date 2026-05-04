@@ -12,14 +12,20 @@ load_xlsb_sheets(path, range = NULL)
 \item{range}{Optional cell range passed to \code{readxlsb::read_xlsb()}.}
 }
 \value{
-A named list of data frames — one entry per sheet.
+A named list of data frames -- one entry per sheet.
 }
 \description{
 Wrapper around the \code{readxlsb} package. Returns a list whose names are the
 sheet names and whose elements are the parsed data frames.
 }
+\note{
+\code{readxlsb} was archived from CRAN in 2024-09-25. To use this
+function you have to install it from GitHub manually:
+\code{remotes::install_github("velofrog/readxlsb")}.
+}
 \examples{
 \dontrun{
+  # Requires: remotes::install_github("velofrog/readxlsb")
   sheets <- load_xlsb_sheets("path/to/file.xlsb")
 }
 }

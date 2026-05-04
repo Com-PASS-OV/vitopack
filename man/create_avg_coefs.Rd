@@ -10,7 +10,7 @@ create_avg_coefs(chl_trg, avg_length = "full")
 \item{chl_trg}{A development-factor triangle (e.g. the output of
 \code{\link[=create_chl_coef_triangle]{create_chl_coef_triangle()}}).}
 
-\item{avg_length}{Vector — each element either \code{"full"} (use the full
+\item{avg_length}{Vector -- each element either \code{"full"} (use the full
 diagonal) or an integer giving the window length.}
 }
 \value{

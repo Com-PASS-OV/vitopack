@@ -18,21 +18,21 @@ create_triangle(
 \item{data}{A data frame (or tibble) with at least the columns named by
 \code{row_num}, \code{col_num} and \code{value}.}
 
-\item{row_num}{Character — name of the column with row indices (origin
+\item{row_num}{Character - name of the column with row indices (origin
 periods, 1-based).}
 
-\item{col_num}{Character — name of the column with column indices
+\item{col_num}{Character - name of the column with column indices
 (development periods, 0-based).}
 
-\item{value}{Character — name of the numeric column to be summed.}
+\item{value}{Character - name of the numeric column to be summed.}
 
-\item{cond_variable}{Optional character vector — names of columns to
+\item{cond_variable}{Optional character vector - names of columns to
 filter on.}
 
 \item{cond_value}{Optional vector of values, same length as
-\code{cond_variable} — equality filter applied pairwise.}
+\code{cond_variable} - equality filter applied pairwise.}
 
-\item{rows}{Optional integer — size of the output triangle. Defaults to
+\item{rows}{Optional integer - size of the output triangle. Defaults to
 the maximum value of \code{data[[row_num]]}.}
 }
 \value{

@@ -11,7 +11,7 @@ create_product_coefs(chl_coefs, name = "Product")
 whose other columns hold development factors. (As returned by
 \code{\link[=create_chl_coefs]{create_chl_coefs()}}.)}
 
-\item{name}{Character — label for the resulting row.}
+\item{name}{Character -- label for the resulting row.}
 }
 \value{
 A character vector of cumulative-product factors with \code{name} as

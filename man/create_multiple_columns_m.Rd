@@ -14,13 +14,13 @@ create_multiple_columns_m(
 \arguments{
 \item{data}{A data frame.}
 
-\item{new_variable_names}{Character vector — names of the resulting
+\item{new_variable_names}{Character vector - names of the resulting
 columns.}
 
-\item{multiple_exp_names}{Character vector — names of the columns to
+\item{multiple_exp_names}{Character vector - names of the columns to
 multiply.}
 
-\item{multiply_var}{Character scalar — name of the multiplier column.}
+\item{multiply_var}{Character scalar - name of the multiplier column.}
 }
 \value{
 A data frame with the new multiplied columns added.

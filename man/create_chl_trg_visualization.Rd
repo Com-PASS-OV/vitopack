@@ -9,7 +9,7 @@ create_chl_trg_visualization(data_matrix, columns)
 \arguments{
 \item{data_matrix}{A named matrix where row names act as the x-axis.}
 
-\item{columns}{Character or numeric vector — which columns to plot.}
+\item{columns}{Character or numeric vector -- which columns to plot.}
 }
 \value{
 A \code{plotly} htmlwidget.

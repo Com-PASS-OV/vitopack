@@ -29,7 +29,7 @@ policy start and end dates.}
 The updated data.table (modified in place).
 }
 \description{
-Sister of \code{\link[=create_policy_exposure_columns_m]{create_policy_exposure_columns_m()}} — same logic, but the
+Sister of \code{\link[=create_policy_exposure_columns_m]{create_policy_exposure_columns_m()}} - same logic, but the
 exposure is expressed in \strong{days} (rounded) instead of years.
 }
 \examples{
