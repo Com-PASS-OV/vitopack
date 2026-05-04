@@ -19,7 +19,7 @@ create_chl_coefs(cum_trg, chl_length = "full")
 
 - chl_length:
 
-  A vector — each element is either the literal `"full"` (use all rows)
+  A vector – each element is either the literal `"full"` (use all rows)
   or a numeric/integer giving the window length. Default `"full"`.
 
 ## Value

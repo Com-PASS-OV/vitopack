@@ -6,7 +6,7 @@ families:
 
 ## Details
 
-- **Triangles & chain-ladder** —
+- **Triangles & chain-ladder** -
   [`create_triangle()`](https://donvito.github.io/vitopack/reference/create_triangle.md),
   [`create_cumulative_triangle()`](https://donvito.github.io/vitopack/reference/create_cumulative_triangle.md),
   [`create_chl_coefs()`](https://donvito.github.io/vitopack/reference/create_chl_coefs.md),
@@ -14,18 +14,18 @@ families:
   [`create_run_off_check()`](https://donvito.github.io/vitopack/reference/create_run_off_check.md)
   and friends.
 
-- **Policy columns & exposures** —
+- **Policy columns & exposures** -
   [`create_find_columns()`](https://donvito.github.io/vitopack/reference/create_find_columns.md),
   [`create_policy_exposure_columns_m()`](https://donvito.github.io/vitopack/reference/create_policy_exposure_columns_m.md),
   [`create_policy_exposure_days_columns()`](https://donvito.github.io/vitopack/reference/create_policy_exposure_days_columns.md),
   [`create_multiple_columns_m()`](https://donvito.github.io/vitopack/reference/create_multiple_columns_m.md).
 
-- **Czech birth numbers** —
+- **Czech birth numbers** -
   [`rc_to_birth_day()`](https://donvito.github.io/vitopack/reference/rc_to_birth_day.md),
   [`rc_to_birth_day_2()`](https://donvito.github.io/vitopack/reference/rc_to_birth_day.md),
   [`rc_to_birth_day_3()`](https://donvito.github.io/vitopack/reference/rc_to_birth_day.md).
 
-- **Color palettes** —
+- **Color palettes** -
   [`rgb_colors_for_plot()`](https://donvito.github.io/vitopack/reference/rgb_colors_for_plot.md),
   [`get_colors()`](https://donvito.github.io/vitopack/reference/get_colors.md),
   [`get_colors_plus()`](https://donvito.github.io/vitopack/reference/get_colors.md),
@@ -33,7 +33,7 @@ families:
   [`plot_color_bars()`](https://donvito.github.io/vitopack/reference/plot_color_bars.md),
   [`rainbow_cat()`](https://donvito.github.io/vitopack/reference/rainbow_cat.md).
 
-- **I/O & misc** —
+- **I/O & misc** -
   [`load_excel_sheets()`](https://donvito.github.io/vitopack/reference/load_excel_sheets.md),
   [`load_xlsb_sheets()`](https://donvito.github.io/vitopack/reference/load_xlsb_sheets.md),
   [`numeric_format()`](https://donvito.github.io/vitopack/reference/numeric_format.md),

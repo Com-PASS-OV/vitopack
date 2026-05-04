@@ -21,7 +21,7 @@ create_product_coefs(chl_coefs, name = "Product")
 
 - name:
 
-  Character — label for the resulting row.
+  Character – label for the resulting row.
 
 ## Value
 

@@ -21,12 +21,19 @@ load_xlsb_sheets(path, range = NULL)
 
 ## Value
 
-A named list of data frames — one entry per sheet.
+A named list of data frames – one entry per sheet.
+
+## Note
+
+`readxlsb` was archived from CRAN in 2024-09-25. To use this function
+you have to install it from GitHub manually:
+`remotes::install_github("velofrog/readxlsb")`.
 
 ## Examples
 
 ``` r
 if (FALSE) { # \dontrun{
+  # Requires: remotes::install_github("velofrog/readxlsb")
   sheets <- load_xlsb_sheets("path/to/file.xlsb")
 } # }
 ```

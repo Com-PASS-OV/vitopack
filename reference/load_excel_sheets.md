@@ -27,7 +27,7 @@ load_excel_sheets(path, range = NULL)
 
 ## Value
 
-A named list of data frames — one entry per sheet.
+A named list of data frames – one entry per sheet.
 
 ## Examples
 

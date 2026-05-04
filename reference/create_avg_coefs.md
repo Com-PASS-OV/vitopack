@@ -19,7 +19,7 @@ create_avg_coefs(chl_trg, avg_length = "full")
 
 - avg_length:
 
-  Vector — each element either `"full"` (use the full diagonal) or an
+  Vector – each element either `"full"` (use the full diagonal) or an
   integer giving the window length.
 
 ## Value

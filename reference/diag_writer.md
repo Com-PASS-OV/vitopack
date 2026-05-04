@@ -14,11 +14,11 @@ diag_writer(old_trg, new_trg)
 
 - old_trg:
 
-  A `(n) x (n)` matrix — the old triangle.
+  A `(n) x (n)` matrix - the old triangle.
 
 - new_trg:
 
-  A `(n+1) x (n+1)` matrix — the new triangle including the freshly
+  A `(n+1) x (n+1)` matrix - the new triangle including the freshly
   observed diagonal.
 
 ## Value

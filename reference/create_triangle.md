@@ -28,30 +28,30 @@ create_triangle(
 
 - row_num:
 
-  Character — name of the column with row indices (origin periods,
+  Character - name of the column with row indices (origin periods,
   1-based).
 
 - col_num:
 
-  Character — name of the column with column indices (development
+  Character - name of the column with column indices (development
   periods, 0-based).
 
 - value:
 
-  Character — name of the numeric column to be summed.
+  Character - name of the numeric column to be summed.
 
 - cond_variable:
 
-  Optional character vector — names of columns to filter on.
+  Optional character vector - names of columns to filter on.
 
 - cond_value:
 
-  Optional vector of values, same length as `cond_variable` — equality
+  Optional vector of values, same length as `cond_variable` - equality
   filter applied pairwise.
 
 - rows:
 
-  Optional integer — size of the output triangle. Defaults to the
+  Optional integer - size of the output triangle. Defaults to the
   maximum value of `data[[row_num]]`.
 
 ## Value

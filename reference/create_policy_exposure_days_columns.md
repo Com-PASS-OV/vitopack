@@ -1,9 +1,9 @@
 # Build per-period exposure columns (in days)
 
 Sister of
-[`create_policy_exposure_columns_m()`](https://donvito.github.io/vitopack/reference/create_policy_exposure_columns_m.md)
-— same logic, but the exposure is expressed in **days** (rounded)
-instead of years.
+[`create_policy_exposure_columns_m()`](https://donvito.github.io/vitopack/reference/create_policy_exposure_columns_m.md) -
+same logic, but the exposure is expressed in **days** (rounded) instead
+of years.
 
 ## Usage
 

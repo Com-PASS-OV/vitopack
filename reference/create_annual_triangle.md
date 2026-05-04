@@ -18,7 +18,7 @@ create_annual_triangle(cum_trg, period = 4)
 
 - period:
 
-  Integer — number of sub-periods that make up one year (default `4` for
+  Integer - number of sub-periods that make up one year (default `4` for
   quarters).
 
 ## Value

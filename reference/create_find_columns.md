@@ -3,7 +3,7 @@
 For each pair `(condition_names[i], new_cols_names[i])` the function
 adds a new column to `data` initialised to `0`. Where the row matches
 `data[[condition_var]] == condition_names[i]`, the new column is set to
-the value of `data[[values_var]]` (evaluated as an expression — see
+the value of `data[[values_var]]` (evaluated as an expression - see
 Details).
 
 ## Usage
@@ -35,11 +35,11 @@ create_find_columns(
 
 - condition_var:
 
-  Character scalar — name of the column to test.
+  Character scalar - name of the column to test.
 
 - values_var:
 
-  Character scalar — expression that yields the value to assign where
+  Character scalar - expression that yields the value to assign where
   the condition matches.
 
 ## Value

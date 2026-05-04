@@ -18,19 +18,22 @@ non-life actuarial work at **Com-PASS Advisory s.r.o.** It collects:
 The development version from GitHub:
 
 ``` r
+
 # install.packages("pak")
-pak::pak("donvito/vitopack")
+pak::pak("Com-PASS-OV/vitopack")
 ```
 
 Once on CRAN:
 
 ``` r
+
 install.packages("vitopack")
 ```
 
 ## Quick example
 
 ``` r
+
 library(vitopack)
 
 # Long-form claims data → triangle

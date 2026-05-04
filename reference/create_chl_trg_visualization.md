@@ -17,7 +17,7 @@ create_chl_trg_visualization(data_matrix, columns)
 
 - columns:
 
-  Character or numeric vector — which columns to plot.
+  Character or numeric vector – which columns to plot.
 
 ## Value
 

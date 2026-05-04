@@ -15,6 +15,7 @@ na GitHub a nasazením pkgdown stránky, 5. odesláním balíčku na CRAN.
 V R konzoli (Windows: RGui nebo RStudio):
 
 ``` r
+
 install.packages(c("devtools", "roxygen2", "testthat", "knitr",
                    "rmarkdown", "pkgdown", "covr", "usethis", "rhub"))
 ```
@@ -32,12 +33,14 @@ V RStudiu: **File → New Project → Existing Directory →**
 Nebo z konzole:
 
 ``` r
+
 setwd("C:/Users/OndřejVít/Desktop/vitopack/vitopack")
 ```
 
 ## 3. Vygeneruj dokumentaci a NAMESPACE
 
 ``` r
+
 devtools::document()
 ```
 
@@ -47,18 +50,21 @@ doplní/aktualizuje `NAMESPACE`.
 ## 4. Spusť testy
 
 ``` r
+
 devtools::test()
 ```
 
 Pokrytí:
 
 ``` r
+
 covr::report()
 ```
 
 ## 5. R CMD check (povinné před CRAN)
 
 ``` r
+
 devtools::check()
 # nebo s manuálem a externími kontrolami
 devtools::check(manual = TRUE, remote = TRUE)
@@ -71,6 +77,7 @@ Cíl: **0 errors, 0 warnings, 0 notes**.
 Čistý PDF se všemi exportovanými funkcemi:
 
 ``` r
+
 devtools::build_manual()
 # výstup: ../vitopack_0.1.0.pdf
 ```
@@ -84,6 +91,7 @@ R CMD Rd2pdf .
 ## 7. Build zdrojového balíčku
 
 ``` r
+
 devtools::build()
 # výstup: ../vitopack_0.1.0.tar.gz
 ```
@@ -91,6 +99,7 @@ devtools::build()
 Pro instalaci lokálně:
 
 ``` r
+
 devtools::install()
 ```
 
@@ -128,12 +137,14 @@ devtools::install()
 5.  (Volitelné) lokálně si stránku zkus:
 
     ``` r
+
     pkgdown::build_site()
     ```
 
 ## 9. Pre-CRAN kontroly napříč platformami
 
 ``` r
+
 devtools::check_win_devel()       # win-builder (R-devel)
 devtools::check_win_release()     # win-builder (R-release)
 rhub::rhub_setup()                # první nastavení
@@ -156,6 +167,7 @@ Vyřeš všechny WARNING/NOTE než půjdeš dál.
 3.  Spusť:
 
     ``` r
+
     devtools::release()
     ```
 
@@ -181,18 +193,19 @@ Vyřeš všechny WARNING/NOTE než půjdeš dál.
 - Pro další verzi:
 
   ``` r
+
   usethis::use_version("patch")  # 0.1.0 → 0.1.1
   ```
 
 ## Časté problémy a opravy
 
-| Symptom při `R CMD check`                   | Oprava                                                                                                          |
-|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| `no visible binding for global variable`    | Přidej do `R/vitopack-package.R` do `utils::globalVariables(...)`.                                              |
-| `Undocumented arguments in...`              | Doplň `@param` do roxygen komentáře v příslušné `R/*.R`.                                                        |
-| `\dontrun{}` examples should not be skipped | Přepiš na `if (interactive())` nebo `\donttest{}`.                                                              |
-| `License stub mismatch`                     | `LICENSE` stub musí mít přesně `YEAR:` a `COPYRIGHT HOLDER:` řádky.                                             |
-| Encoding warning u CZ znaků                 | DESCRIPTION už má `Encoding: UTF-8` — zkontroluj, že ho má i `RStudio Tools → Project Options → Code → Saving`. |
+| Symptom při `R CMD check` | Oprava |
+|----|----|
+| `no visible binding for global variable` | Přidej do `R/vitopack-package.R` do `utils::globalVariables(...)`. |
+| `Undocumented arguments in...` | Doplň `@param` do roxygen komentáře v příslušné `R/*.R`. |
+| `\dontrun{}` examples should not be skipped | Přepiš na `if (interactive())` nebo `\donttest{}`. |
+| `License stub mismatch` | `LICENSE` stub musí mít přesně `YEAR:` a `COPYRIGHT HOLDER:` řádky. |
+| Encoding warning u CZ znaků | DESCRIPTION už má `Encoding: UTF-8` — zkontroluj, že ho má i `RStudio Tools → Project Options → Code → Saving`. |
 
 ## Struktura balíčku (rychlý přehled)
 

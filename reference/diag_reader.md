@@ -17,7 +17,7 @@ diag_reader(trg, diag_num = nrow(trg))
 
 - diag_num:
 
-  Integer — which anti-diagonal to read. Defaults to the main (last)
+  Integer - which anti-diagonal to read. Defaults to the main (last)
   one.
 
 ## Value

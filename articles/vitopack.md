@@ -1,6 +1,7 @@
 # Getting started with vitopack
 
 ``` r
+
 library(vitopack)
 ```
 
@@ -12,6 +13,7 @@ This vignette walks through the three most common use cases.
 Start from long claims data and aggregate into a triangle:
 
 ``` r
+
 df <- data.frame(
   origin = c(1, 1, 1, 2, 2, 3),
   dev    = c(0, 1, 2, 0, 1, 0),
@@ -32,6 +34,7 @@ trg
 Cumulate, then read off development factors:
 
 ``` r
+
 cum <- create_cumulative_triangle(trg)
 create_chl_coefs(cum, chl_length = c("full", 2))
 #>          CH_L_lengths  0   1        2
@@ -42,6 +45,7 @@ create_chl_coefs(cum, chl_length = c("full", 2))
 A weighted variant accepts an explicit weight matrix (e.g. exposure):
 
 ``` r
+
 weight <- matrix(1, nrow = nrow(cum), ncol = ncol(cum))
 weight[is.na(cum)] <- NA
 create_chl_coefs_weighted(cum, weight, chl_length = "full")
@@ -58,6 +62,7 @@ For visual inspection use
 Turn a policy table into one column per accounting period:
 
 ``` r
+
 policies <- data.frame(
   policy_start = as.Date(c("2024-01-15", "2024-06-01")),
   policy_end   = as.Date(c("2024-12-31", "2025-05-31"))
@@ -78,6 +83,7 @@ create_policy_exposure_columns_m(
 Three slightly different rules for resolving the century are supported.
 
 ``` r
+
 rc_to_birth_day("900615/1234")     # man, 1990-06-15
 #> [1] "1990-06-15"
 rc_to_birth_day("055615/1234")     # woman, 2005-06-15
@@ -89,6 +95,7 @@ rc_to_birth_day_2("240615/1234")   # cut-off 25 → 2024-06-15
 ## 4. Smooth color palettes for plots
 
 ``` r
+
 rgb_df <- rgb_colors_for_plot()
 get_colors_duo(rgb_df, 8)
 #> [1] "#99FF99" "#00CC92" "#99D3FF" "#1C00CC" "#F099FF" "#CC0057" "#FFB599"
@@ -96,5 +103,6 @@ get_colors_duo(rgb_df, 8)
 ```
 
 ``` r
+
 plot_color_bars(12)
 ```

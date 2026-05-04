@@ -22,15 +22,15 @@ create_multiple_columns_m(
 
 - new_variable_names:
 
-  Character vector — names of the resulting columns.
+  Character vector - names of the resulting columns.
 
 - multiple_exp_names:
 
-  Character vector — names of the columns to multiply.
+  Character vector - names of the columns to multiply.
 
 - multiply_var:
 
-  Character scalar — name of the multiplier column.
+  Character scalar - name of the multiplier column.
 
 ## Value
 
