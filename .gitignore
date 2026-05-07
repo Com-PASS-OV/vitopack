@@ -13,3 +13,5 @@ revdep/
 .Rd2pdf*/
 *.tar.gz
 *.pdf
+/*.xlsx
+/*.xlsb

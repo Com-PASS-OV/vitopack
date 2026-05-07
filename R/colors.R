@@ -178,7 +178,7 @@ get_colors_duo <- function(rgb_df, n_colors) {
 #' @export
 #'
 #' @examples
-#' if (interactive()) plot_color_bars(12)
+#' plot_color_bars(12)
 plot_color_bars <- function(n_colors) {
   rgb <- rgb_colors_for_plot()
   color_vector <- get_colors_duo(rgb, n_colors)

@@ -17,5 +17,5 @@ Convenience wrapper that calls \code{\link[=rgb_colors_for_plot]{rgb_colors_for_
 \code{\link[=get_colors_duo]{get_colors_duo()}} and renders the result as a stacked bar chart.
 }
 \examples{
-if (interactive()) plot_color_bars(12)
+plot_color_bars(12)
 }

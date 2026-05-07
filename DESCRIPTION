@@ -1,7 +1,7 @@
 Package: vitopack
 Type: Package
 Title: Actuarial Helpers for Triangles, Exposures and Czech Birth Numbers
-Version: 0.1.0
+Version: 0.1.1
 Authors@R:
     person(given = "Ondřej",
            family = "Vít",
@@ -14,6 +14,8 @@ Description: A collection of utilities that grew out of day-to-day non-life
     policy start/end dates, parsing Czech birth numbers ('rodné číslo')
     into dates, generating smooth RGB color palettes for charts, and
     loading multi-sheet 'xlsx'/'xlsb' files into a list of data frames.
+    The chain-ladder helpers follow the standard methodology of
+    Mack (1993) <doi:10.2143/AST.23.2.2005092>.
 License: MIT + file LICENSE
 URL: https://github.com/Com-PASS-OV/vitopack, https://Com-PASS-OV.github.io/vitopack/
 BugReports: https://github.com/Com-PASS-OV/vitopack/issues
