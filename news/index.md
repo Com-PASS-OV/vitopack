@@ -1,5 +1,14 @@
 # Changelog
 
+## vitopack 0.1.1
+
+- Address CRAN reviewer feedback (Benjamin Altmann, 2026-05-04):
+  - Added a reference to the chain-ladder methodology in the
+    `DESCRIPTION` field: Mack (1993) <doi:10.2143/AST.23.2.2005092>.
+  - Removed the `if (interactive())` wrapper from the
+    [`plot_color_bars()`](https://donvito.github.io/vitopack/reference/plot_color_bars.md)
+    example – the function works in non-interactive sessions too.
+
 ## vitopack 0.1.0
 
 - Initial release.

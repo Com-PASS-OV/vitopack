@@ -25,5 +25,5 @@ Invisible `NULL`. Called for the side effect of plotting.
 ## Examples
 
 ``` r
-if (interactive()) plot_color_bars(12)
+plot_color_bars(12)
 ```
